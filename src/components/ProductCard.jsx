@@ -4,40 +4,26 @@ export default function ProductCard({
   image,
   title = "Untitled",
   price = "—",
-  onAddToCart,
   onBuy,
   index = 0,
 }) {
-  const handle = onAddToCart || onBuy;
-
   return (
     <div
       className="card product-card"
-      style={{
-        maxWidth: 400,
-        animationDelay: `${index * 60}ms`,
-        display: "flex",
-        flexDirection: "column",
-        height: "100%",
-      }}
+      style={{ maxWidth: 400, animationDelay: `${index * 60}ms` }}
     >
       <img
         className="card-img-top"
         src={image}
         alt={title}
-        style={{ width: "100%", flex: "0 0 auto" }}
+        style={{ width: "100%" }}
       />
-      <div
-        className="card-body text-center"
-        style={{ display: "flex", flexDirection: "column", flex: 1 }}
-      >
+      <div className="card-body">
         <h4 className="card-title">{title}</h4>
         <p className="card-text">{price}</p>
-        <div style={{ marginTop: "auto" }}>
-          <button type="button" className="btn btn-primary" onClick={handle}>
-            Add to Cart
-          </button>
-        </div>
+        <button type="button" className="btn btn-primary" onClick={onBuy}>
+          Buy Now
+        </button>
       </div>
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 
 export default function CartModal({
-  isOpen,
+  open,
   items = [],
   onClose,
   onRemove,
   onCheckout,
 }) {
-  if (!isOpen) return null;
+  if (!open) return null;
 
   return (
     <div
@@ -27,7 +27,7 @@ export default function CartModal({
       <div
         className="cart-modal-panel"
         style={{
-          background: "#26AB95",
+          background: "lightgray",
           padding: 20,
           width: 480,
           maxHeight: "80%",

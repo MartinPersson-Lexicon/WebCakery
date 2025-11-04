@@ -1,5 +1,4 @@
 import Header from "../components/header";
-import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -10,7 +9,6 @@ export default function Home() {
         cupcakes for all kinds of events and celebrations. Browse around to
         discover what you would like to buy.
       </h1>
-      <Footer />
     </div>
   );
 }

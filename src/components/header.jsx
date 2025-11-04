@@ -9,10 +9,10 @@ export default function Header() {
           className="rounded-circle"
           src={logo}
           alt="Cupcake logo"
-          style={{ width: "100px" }}
+          style={{ width: "80px" }}
         />
       </Link>
-      <ul className="navbar-nav" style={{ fontSize: "2rem", color: "red" }}>
+      <ul className="navbar-nav">
         <li className="nav-item nav-link">
           <a className="nav-link" href="/home">
             Home
