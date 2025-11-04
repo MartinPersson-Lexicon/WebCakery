@@ -12,7 +12,7 @@ export default function Header() {
           style={{ width: "80px" }}
         />
       </Link>
-      <ul className="navbar-nav">
+      <ul className="navbar-nav" style={{ fontSize: "2rem", color: "red" }}>
         <li className="nav-item nav-link">
           <a className="nav-link" href="/home">
             Home

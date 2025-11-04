@@ -1,4 +1,6 @@
 import Header from "../components/header";
+import Footer from "../components/footer";
+
 
 export default function Contact() {
   return (
@@ -11,6 +13,7 @@ export default function Contact() {
         via WhatsApp. Orders must be placed 2 days before for greater security,
         processing and availability. Tuesday to Saturday 9 a.m. at 2 p.m.
       </h1>
+      <Footer />
     </div>
   );
 }

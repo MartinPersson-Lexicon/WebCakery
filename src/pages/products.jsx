@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products";
 import CartModal from "../components/CartModal";
@@ -192,6 +193,7 @@ export default function Products() {
           Next
         </button>
       </nav>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
         unforgettable memory. We have been in the pastry market for more than 8
         years and now we offer you a new way to shop through our website.
       </h4>
+      <Footer />
     </div>
   );
 }
