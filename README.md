@@ -1,4 +1,4 @@
-A project whithin the fullstack course from Lexicon.
+A frontend project whithin the fullstack course from Lexicon.
 
 The client Munamii Cakery has a cupcake shop on Instagram where she sells 
 cupcakes and wedding cakes, etc. 

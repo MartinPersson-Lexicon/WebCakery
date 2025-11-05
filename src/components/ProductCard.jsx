@@ -8,7 +8,7 @@ export default function ProductCard({
   onBuy,
   index = 0,
 }) {
-  const handle = onAddToCart || onBuy;
+  const handleClick = onAddToCart || onBuy;
 
   return (
     <div
@@ -19,6 +19,7 @@ export default function ProductCard({
         display: "flex",
         flexDirection: "column",
         height: "100%",
+        backgroundColor: "#26AB9550"
       }}
     >
       <img
@@ -34,7 +35,11 @@ export default function ProductCard({
         <h4 className="card-title">{title}</h4>
         <p className="card-text">{price}</p>
         <div style={{ marginTop: "auto" }}>
-          <button type="button" className="btn btn-primary" onClick={handle}>
+          <button
+            type="button"
+            className="btn btn-outline-primary"
+            onClick={handleClick}
+          >
             Add to Cart
           </button>
         </div>
