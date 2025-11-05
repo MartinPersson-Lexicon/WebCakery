@@ -7,7 +7,7 @@ export default function About() {
       <Header />
       <div
         style={{
-          margin:"2rem"
+          margin: "2rem",
         }}
       >
         <h3>
@@ -22,6 +22,8 @@ export default function About() {
           We have been in the pastry market for more than 8 years and now we
           offer you a new way to shop through our website.
         </h4>
+      </div>
+      <div style={{ marginTop: "16rem" }}>
         <Footer />
       </div>
     </div>

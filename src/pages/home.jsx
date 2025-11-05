@@ -16,6 +16,8 @@ export default function Home() {
           events and celebrations.
         </h4>
         <h4>Browse around to discover what you would like to buy.</h4>
+      </div>
+      <div style={{ marginTop: "16rem" }}>
         <Footer />
       </div>
     </div>

@@ -104,7 +104,8 @@ export default function CartModal({
             style={{
               marginLeft: 8,
               borderRadius: 6,
-              border: "1px solid white",
+              border: "2px solid",
+              fontWeight: "bold",
             }}
           >
             Checkout

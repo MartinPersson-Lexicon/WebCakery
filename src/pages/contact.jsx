@@ -26,6 +26,8 @@ export default function Contact() {
           Contact us via WhatsApp at (redacted) or via email at Tuesday to
           Saturday 9 a.m. at 2 p.m.
         </h4>
+      </div>
+      <div style={{ marginTop: "16rem" }}>
         <Footer />
       </div>
     </div>
