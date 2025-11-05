@@ -1,8 +1,7 @@
 {
   "name": "web-cakery",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "https://martinpersson-lexicon.github.io/web-cakery",
+  "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -14,7 +13,6 @@
     "react-router-dom": "^7.9.5",
     "web-vitals": "^2.1.4"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -44,5 +42,6 @@
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "react-scripts": "^5.0.1"
-  }
+  },
+  "homepage": "https://martinpersson-lexicon.github.io/web-cakery"
 }
