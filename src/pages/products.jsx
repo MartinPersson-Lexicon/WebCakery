@@ -167,40 +167,53 @@ export default function Products() {
         }}
       />
 
-      <nav aria-label="Products pagination" style={{ padding: "0 1rem 2rem" }}>
-        <button
-          onClick={() => setPage((s) => Math.max(1, s - 1))}
-          disabled={page === 1}
-          style={{ marginRight: 8, borderRadius: 6, border: "1px solid white" }}
+      <div>
+        <nav
+          aria-label="Products pagination"
+          style={{ padding: "0 1rem 2rem" }}
         >
-          Prev
-        </button>
-
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
           <button
-            key={p}
-            onClick={() => setPage(p)}
-            aria-current={p === page ? "page" : undefined}
+            onClick={() => setPage((s) => Math.max(1, s - 1))}
+            disabled={page === 1}
             style={{
-              marginRight: 6,
+              marginRight: 8,
               borderRadius: 6,
               border: "1px solid white",
-              fontWeight: p === page ? "bold" : "normal",
-              backgroundColor: p === page ? "#26AB95" : "darkgray",
             }}
           >
-            {p}
+            Prev
           </button>
-        ))}
 
-        <button
-          onClick={() => setPage((s) => Math.min(totalPages, s + 1))}
-          disabled={page === totalPages}
-          style={{ marginLeft: 8, borderRadius: 6, border: "1px solid white" }}
-        >
-          Next
-        </button>
-      </nav>
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+            <button
+              key={p}
+              onClick={() => setPage(p)}
+              aria-current={p === page ? "page" : undefined}
+              style={{
+                marginRight: 6,
+                borderRadius: 6,
+                border: "1px solid white",
+                fontWeight: p === page ? "bold" : "normal",
+                backgroundColor: p === page ? "#26AB95" : "darkgray",
+              }}
+            >
+              {p}
+            </button>
+          ))}
+
+          <button
+            onClick={() => setPage((s) => Math.min(totalPages, s + 1))}
+            disabled={page === totalPages}
+            style={{
+              marginLeft: 8,
+              borderRadius: 6,
+              border: "1px solid white",
+            }}
+          >
+            Next
+          </button>
+        </nav>
+      </div>
       <div style={{ marginTop: "16rem" }}>
         <Footer />
       </div>
