@@ -19,7 +19,7 @@ export default function ProductCard({
         display: "flex",
         flexDirection: "column",
         height: "100%",
-        backgroundColor: "#26AB9550"
+        backgroundColor: "#26AB9550",
       }}
     >
       <img

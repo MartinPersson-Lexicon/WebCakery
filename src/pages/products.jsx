@@ -167,10 +167,7 @@ export default function Products() {
         }}
       />
 
-      <nav
-        aria-label="Products pagination"
-        style={{ padding: "0 1rem 2rem" }}
-      >
+      <nav aria-label="Products pagination" style={{ padding: "0 1rem 2rem" }}>
         <button
           onClick={() => setPage((s) => Math.max(1, s - 1))}
           disabled={page === 1}
@@ -204,7 +201,7 @@ export default function Products() {
           Next
         </button>
       </nav>
-      <div style={{marginTop:"16rem"}}>
+      <div style={{ marginTop: "16rem" }}>
         <Footer />
       </div>
     </div>
