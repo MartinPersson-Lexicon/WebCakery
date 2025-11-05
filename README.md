@@ -12,3 +12,5 @@ logotype and product images for learning purposes.
 contestant and only 1 get paid)
 
 Tech stack: VS Code, JavaScript, HTML, CSS and Boostrap.
+
+/Martin Persson
